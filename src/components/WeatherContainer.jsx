@@ -2,7 +2,6 @@ import { useState } from "react";
 import WeatherStatus from "./WeatherStatus";
 import { countryList } from "../db/Countries";
 
-
 const WeatherContainer = ({ weather }) => {
   console.log(weather);
 
