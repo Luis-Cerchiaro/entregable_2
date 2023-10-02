@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 import WeatherContainer from "./components/WeatherContainer";
-import {weatherBackground} from "./db/weatherBackground"
+import { weatherBackground } from "./db/weatherBackground";
 
 function App() {
   useEffect(() => {
@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <main >
+    <main>
       {weather === null ? (
         <section className='font-["Lato"] flex justify-center items-center min-h-screen bg-black text-white px-2'>
           <div>
@@ -34,13 +34,14 @@ function App() {
           <h3 className="text-center p-5">WeatherApp</h3>
         </section>
       ) : (
-        <div 
-        className='font-["Lato"] flex justify-center items-center min-h-screen bg-cover bg-center  text-white px-2]'
-        style={{backgroundImage: `url(${weatherBackground[`${weather.weather[0].description}`]})`}}
+        <div
+          className='font-["Lato"] flex justify-center items-center min-h-screen bg-cover bg-center  text-white px-2]'
+          style={{
+            backgroundImage: `url(${
+              weatherBackground[`${weather.weather[0].description}`]
+            })`,
+          }}
         >
-          {weatherBackground[`${weather.weather[0].description}`]}
-          
-
           <WeatherContainer weather={weather} />
         </div>
       )}
