@@ -3,13 +3,11 @@ import "./App.css";
 import axios from "axios";
 import WeatherContainer from "./components/WeatherContainer";
 
-
 function App() {
-  
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(success)
-  }, [])
-  
+    navigator.geolocation.getCurrentPosition(success);
+  }, []);
+
   const [weather, setWeather] = useState(null);
 
   const success = (position) => {
@@ -25,10 +23,16 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-
   return (
-    <main className='font-["Lato"] flex justify-center items-center min-h-screen bg-black text-white '>
-      <WeatherContainer weather={weather}/>
+    <main className='font-["Lato"] flex justify-center items-center min-h-screen bg-black text-white px-2'>
+      {weather === null ? (
+        <section>
+          <div><img src="vector.svg" alt="" /></div>
+          <h3 className="text-center p-5">WeatherApp</h3>
+        </section>
+      ) : (
+        <WeatherContainer weather={weather} />
+      )}
     </main>
   );
 }
