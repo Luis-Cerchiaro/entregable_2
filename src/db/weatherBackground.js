@@ -11,4 +11,6 @@ export const weatherBackground = {
   "overcast clouds": "./scatteredClouds.jpg",
   "light rain": "./showerRain.jpg",
   "haze": "./haze.jpg",
+  "heavy intensity rain": "./heavyIntensityRain.jpg",
+  "heavy intensity rain":"./heavyIntensityRain.jpg",
 };
