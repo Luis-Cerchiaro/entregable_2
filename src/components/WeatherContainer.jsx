@@ -60,6 +60,11 @@ const WeatherContainer = ({ weather }) => {
             unit="hPa"
             value={weather.main.pressure}
           />
+            <WeatherStatus
+            icon="/humidity.svg"
+            unit="mm"
+            value={weather.rain["1h"]}
+          />
         </article>
       </div>
       {/*Boton*/}

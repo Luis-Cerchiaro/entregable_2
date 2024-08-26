@@ -10,4 +10,5 @@ export const weatherBackground = {
   "mist": "./mist.jpg",
   "overcast clouds": "./scatteredClouds.jpg",
   "light rain": "./showerRain.jpg",
+  "haze": "./haze.jpg",
 };
