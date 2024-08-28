@@ -63,7 +63,8 @@ const WeatherContainer = ({ weather }) => {
             <WeatherStatus
             icon="/humidity.svg"
             unit="mm"
-            value={weather.rain["1h"]}
+            //Optional chaining (?.)
+            value={weather.rain?.["1h"]}
           />
         </article>
       </div>
