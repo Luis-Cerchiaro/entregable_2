@@ -14,7 +14,8 @@ function App() {
   const success = (position) => {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const API_KEY = "3f9093b9c3326ca304c5c2b1aded4520";
+    //const API_KEY = "3f9093b9c3326ca304c5c2b1aded4520"; 
+    
 
     axios
       .get(
