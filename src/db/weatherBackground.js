@@ -13,4 +13,5 @@ export const weatherBackground = {
   "haze": "./haze.jpg",
   "heavy intensity rain": "./heavyIntensityRain.jpg",
   "light intensity drizzle":"./haze.jpg",
+  "moderate rain": "./showerRain.jpg",
 };
